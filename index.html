@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <section class="container">
+        <h1>Basket Ball Score Board</h1>
+            <section class="timer">
+             <time datetime="">00:00:00</time>
+            </section>
+            <section class="container-score">
+                <section class="home">
+                    <h3>HOME</h3>
+                    <div class="home-score">
+                        <h4 class="score" id="home-score">0</h4>
+                        <div class="buttons">
+                            <button onclick="addPoint(1, 1)">+1</button>
+                            <button onclick="addPoint(1, 2)">+2</button>
+                            <button onclick="addPoint(1, 3)">+3</button>
+                        </div>
+                    </div>
+                </section>
+                <h2>VS</h2>
+                <section class="guest">
+                    <h3>GUEST</h3>
+                    <section class="guest-score">
+                        <h4 class="score" id="guest-score">0</h4>
+                        <section class="buttons">
+                            <button onclick="addPoint(2, 1)">+1</button>
+                            <button onclick="addPoint(2, 2)">+2</button>
+                            <button onclick="addPoint(2, 3)">+3</button>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="btns">
+            <button class="start-btn" onclick="startGame()">start</button>
+            <button class="reset-btn" onclick="resetGame()">Reset</button>
+            </section>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
